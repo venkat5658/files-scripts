@@ -12,9 +12,9 @@ sudo apt-get install jenkins # to install jenkins
 sudo systemctl start jenkins.service #to start the services of jenkins
 sudo systemctl status jenkins #to check the status of the jenkins
 
- # curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \
   /usr/share/keyrings/jenkins-keyring.asc > /dev/null
-# echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
   https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
   /etc/apt/sources.list.d/jenkins.list > /dev/null
 
